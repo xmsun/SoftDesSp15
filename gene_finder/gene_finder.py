@@ -206,6 +206,7 @@ def coding_strand_to_AA(dna):
         'MLHS'
     """
 
+<<<<<<< HEAD
     #added doctest in case of no dna entry
     #second doctest tests for incomplete sequence
 
@@ -218,12 +219,13 @@ def coding_strand_to_AA(dna):
 def gene_finder(dna):
     """ Returns the amino acid sequences coded by all genes that have an ORF
         larger than the specified threshold.
+=======
+def gene_finder(dna):
+    """ Returns the amino acid sequences that are likely coded by the specified dna
+>>>>>>> b0aafddda8e55dc5bcad47f06e0e175a5fee679e
         
         dna: a DNA sequence
-        threshold: the minimum length of the ORF for it to be considered a valid
-                   gene.
-        returns: a list of all amino acid sequences whose ORFs meet the minimum
-                 length specified.
+        returns: a list of all amino acid sequences coded by the sequence dna.
     """
 
     #no doctest because code contains random shuffle
