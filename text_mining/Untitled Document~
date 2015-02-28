@@ -1,0 +1,20 @@
+Text Mining Reflection
+
+For this project, I attempted to recommended relevant hashtags based on a specified hashtag. Therefore, using the Pattern web mining module, I was able to gather data from Twitter in the form of the latest 1000 tweets from random users. These tweets were then saved in a text document that was used throughout the analysis in the recommend() function. 
+
+
+On a system architecture level, the recommend() function incorporates all of the functions by reading through the text document of tweets and looking for other hashtags then determining the most popular one. One major algorithm is the others() function; though it is short, it is a major component of the code in that it extracts hashtags from the text using a regex functions. The function makes use of the "re" module (regular expressions) and the "findall" function in the module that finds all words that fit the criteria, which in this case was words beginning with a hashtag. I also had difficulty making decisions regarding when to create a separate function and when to implement the piece of code directly in my final function. In those cases, I attempted to make my decisions under the assumption that I would one day expand my program. For example, I created a separate function to find other hashtags although the code is short because I could see the function being used often if I were to add to the complexity of the code. However, in creating a simpler list from the hashtag list, I decided to keep the block of code (though longer) as part of the final function because I felt that part of my code was only relevant once.
+
+I had also 
+Implementation [~2-3 paragraphs]
+Describe your implementation at a system architecture level. You should NOT walk through your code line by line, or explain every function (we can get that from your docstrings). Instead, talk about the major components, algorithms, data structures and how they fit together. You should also discuss at least one design decision where you had to choose between multiple alternatives, and explain why you made the choice you did.
+
+Results [~2-3 paragraphs + figures/examples]
+Present what you accomplished:
+If you did some text analysis, what interesting things did you find? Graphs or other visualizations may be very useful here for showing your results.
+If you created a program that does something interesting (e.g. a Markov text synthesizer), be sure to provide a few interesting examples of the program's output.
+
+
+
+My project was relatively simple in its function and even its function because it does not involve a lot of calculations or more challenging components of Python. However, I feel that it was appropriately scoped for my level of understanding in that it was still a challenge to me. An area of improvement from a process point of view would be to start off with a definitive goal and creating a function diagram before beginning the project. It would also have been better to implement doctests early on in the process in order to utilize it more. However, I had a fairly clear idea of what each function should achieve and defined the functions in that way before beginning, which was very helpful in my implementation. Moving forward, I plan to be more precise in designing the architecture of my code so that my projects are structured in the way the first two projects were presented. I also hope to implement more complicated components and keep in mind that the functions should all be relevant to each other.
+
